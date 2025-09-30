@@ -19,9 +19,9 @@
     <a href="#"><strong>Explore the docs »</strong></a>
     <br />
     <br />
-    <a href="https://github.com/SharleneNdinda/momo-cafe/issues">Report Bug</a>
+    <a href="https://github.com/SharleneNdinda/calender-yangu-backend/issues">Report Bug</a>
     ·
-    <a href="https://github.com/SharleneNdinda/momo-cafe/issues">Request Feature</a>
+    <a href="https://github.com/SharleneNdinda/calender-yangu-backend/issues">Request Feature</a>
   </p>
 </div>
 
@@ -70,6 +70,13 @@ Calender Yangu is a robust, scalable service. It is meant to deliver the followi
 3. Run development server.
 ```sh
   $ python manage.py runserver
+```
+
+### 🔒 Authentication
+
+1. This API uses `Basic Token authentication` to authenticate users. After successful local setup, run the server and paste the following call to create and account.
+```sh
+  $ api call here ...
 ```
 
 [contributors-shield]: https://img.shields.io/github/contributors/SharleneNdinda/calender-yangu-backend?style=for-the-badge

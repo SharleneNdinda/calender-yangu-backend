@@ -5,6 +5,7 @@
 [![Stargazers][stars-shield]][stars-url]
 [![Issues][issues-shield]][issues-url]
 [![LinkedIn][linkedin-shield]][linkedin-url]
+
 </div>
 
 <br />
@@ -13,7 +14,7 @@
   <p align="center">
 
     Your calender better than ever!
-    
+
   </p>
     <br />
     <a href="#"><strong>Explore the docs »</strong></a>
@@ -49,34 +50,59 @@
   </ol>
 </details>
 
-##  About The Project
+## 🚀 About The Project
 
 Calender Yangu is a robust, scalable service. It is meant to deliver the following:
 
     ✅ Be able to view and add events to your personal calender.
 
-### 🚀 Getting Started
+### Built With
+
+[![Django][Django]][Django-url]
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+## 🚀 Getting Started
 
 1. Clone this repository and setup virtual environment. Install all project requirements before proceeding.
+
 ```sh
   $ pip install -r requirements/base.txt
 ```
 
 2. Setup your local `Postgres` database, update database configs and run migrations.
+
 ```sh
   $ python manage.py migrate
 ```
 
 3. Run development server.
+
 ```sh
   $ python manage.py runserver
 ```
 
+## 🚀 Usage
+
+### 🍣 API Endpoints
+
+| Endpoint | URL                 | Description         | 
+| -------- | ------------------- | ------------------- |
+| Login    | /api/auth/login/    | Sign in a user         | 
+| Register | /api/auth/register/ | Create a new user account | 
+
+
 ### 🔒 Authentication
 
-1. This API uses `Basic Token authentication` to authenticate users. After successful local setup, run the server and paste the following call to create and account.
-```sh
-  $ api call here ...
+1. This API uses `Basic Token authentication` to authenticate users. After successful local setup copy the given payload to create a test user via register endpoint.
+
+```json
+{
+  "username": "test",
+  "email": "test@gmail.com",
+  "password1": "OEOGu9OfSuwSZ4",
+  "password2": "OEOGu9OfSuwSZ4"
+}
 ```
 
 [contributors-shield]: https://img.shields.io/github/contributors/SharleneNdinda/calender-yangu-backend?style=for-the-badge
@@ -91,3 +117,9 @@ Calender Yangu is a robust, scalable service. It is meant to deliver the followi
 [linkedin-url]: in/sharlene-mutuku-86571518b
 [product-screenshot]: images/architecture.png
 [x-ray-trace]: images/trace.png
+[Django]: https://img.shields.io/badge/Django-35495E?style=for-the-badge&logo=django&logoColor=4FC08D
+[Django-url]: https://www.djangoproject.com/
+[Bootstrap.com]: https://img.shields.io/badge/Bootstrap-563D7C?style=for-the-badge&logo=bootstrap&logoColor=white
+[Bootstrap-url]: https://getbootstrap.com
+[JQuery.com]: https://img.shields.io/badge/jQuery-0769AD?style=for-the-badge&logo=jquery&logoColor=white
+[JQuery-url]: https://jquery.com
